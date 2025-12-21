@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants-app</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+/>
+
+</head>
+<body>
+    
+<!-- loader  -->
+
+ <div id="pageLoader">
+  <div class="page-spinner"></div>
+</div>
+
+
+<nav class="navbar">
+  <div class="logo"></div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Search Your <br> Favourite Recipes</h1>
+    <p>
+      A handful of simple ingredients typify the fresh, vibrant  <br>flavors of Greek cooking
+    </p>
+  </div>
+</section>
+
+
+
+<section class="search-section">
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search..."
+    />
+    <button id="searchBtn">
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
+
+  <h1 class="section-title">Latest Recipes</h1>
+</section>
+
+  <!-- Cards -->
+  <div id="cardContainer"></div>
+
+
+
+<!-- Modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-box">
+    <img id="modalImg" />
+    <h2 id="modalTitle"></h2>
+
+    <!-- scrollable content area -->
+    <div class="modal-content">
+      <p id="modalDesc"></p>
+    </div>
+
+    <!-- bottom centered close button -->
+   <button id="closeModal" class="close-btn">Close</button>
+
+  </div>
+</div>
+
+
+
+
+<footer class="footer">
+  <p class="copyright">
+    © All rights reserved – Saikat Ghosh
+  </p>
+
+  <div class="social-icons">
+    <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+    <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+    <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+  </div>
+</footer>
+
+
+<!-- scroll to top  -->
+ <button id="scrollTopBtn">
+  <i class="bi bi-arrow-up"></i>
+</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
