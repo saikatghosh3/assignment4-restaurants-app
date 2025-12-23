@@ -30,7 +30,7 @@ async function loadMeals() {
   displayMeals(data.meals);
 }
 
-/* 2 SEARCH API */
+/* 2 search api */
 searchBtn.addEventListener("click", async () => {
   const foodName = searchInput.value.trim();
 
@@ -42,7 +42,7 @@ searchBtn.addEventListener("click", async () => {
   displayMeals(data.meals);
 });
 
-/* DISPLAY CARDS */
+/*Displaying card */
 function displayMeals(meals) {
   cardContainer.innerHTML = "";
 
@@ -88,12 +88,12 @@ async function getMealDetails(id) {
 
 
 
-/* CLOSE MODAL BY BUTTON */
+/* close modal by button */
 closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
 });
 
-/* AND CLOSE MODAL BY CLICKING OUTSIDE */
+/* close modal by clicking outside */
 modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.classList.add("hidden");
@@ -112,12 +112,12 @@ loadMeals();
 
 
 
-// scroll to top btn 
+
+// scroll to top button script start 
 
 
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-// Show button after scrolling
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
     scrollTopBtn.style.display = "flex";
@@ -126,10 +126,13 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Scroll to top on click
+
 scrollTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 });
+
+
+// scroll to top button script end

@@ -6,7 +6,7 @@
 
 
 
-/* loader css  */
+/* loader css  start */
 
 #pageLoader {
   position: fixed;
@@ -34,7 +34,10 @@
   }
 }
 
+/* loader css  end */
 
+
+/* navbar css start  */
 
 .navbar {
   height: 64px;
@@ -44,7 +47,7 @@
   background-color: #ffffff;
 }
 
-/* Logo */
+
 .logo {
   width: 140px;
   height: 40px;
@@ -54,7 +57,7 @@
   background-position: center;
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
   .logo {
     width: 120px;
@@ -62,7 +65,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .logo {
     width: 100px;
@@ -70,7 +73,7 @@
   }
 }
 
-
+/* navbar css end  */
 
     body {
   font-family: Arial, sans-serif;
@@ -79,7 +82,8 @@
 }
 
 
-/* Hero Section */
+/* Hero Section css start */
+
 .hero {
   position: relative;
   height: 60vh;
@@ -91,14 +95,14 @@
   justify-content: center;
 }
 
-/* Black overlay */
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* Content */
+
 .hero-content {
   position: relative;
   text-align: center;
@@ -118,7 +122,7 @@
   opacity: 0.9;
 }
 
-/* Responsive text */
+
 @media (max-width: 768px) {
   .hero {
     height: 50vh;
@@ -134,35 +138,89 @@
 }
 
 
+@media (min-width: 1200px) {
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .hero {
+    height: 45vh;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
 
 
 
 
+/* Hero Section  css end */
 
-/* Search Section */
+
+
+/* Search Section css start */
+
 .search-section {
   margin: 40px 0;
   text-align: center;
 }
 
-/* Input */
+
 .search-wrapper {
   position: relative;
   max-width: 520px;
   margin: 0 auto 25px;
 }
 
-/* Input */
+
 .search-wrapper input {
   width: 100%;
   padding: 14px 45px 14px 15px;
   font-size: 16px;
   border: 1px solid #ccc;
-  /* border-radius: 30px; */
+  
   outline: none;
 }
 
-/* Search Button inside input */
+
 .search-wrapper button {
   position: absolute;
   top: 50%;
@@ -178,14 +236,14 @@
   outline: none;
 }
 
-/* Section title */
+
 .section-title {
   font-size: 28px;
   font-weight: 600;
   margin-top: 10px;
 }
 
-/* Responsive */
+
 @media (max-width: 480px) {
   .search-wrapper {
     max-width: 90%;
@@ -196,9 +254,10 @@
   }
 }
 
+/* Search Section css end */
 
 
-
+/* card section css start  */
 
 
 #cardContainer {
@@ -250,10 +309,11 @@
   color: #fff;
   cursor: pointer;
 }
+/* card section css end  */
 
 
+/* Modal css start  */
 
-/* Modal  */
 .modal {
   position: fixed;
   inset: 0;
@@ -269,7 +329,7 @@
   display: none;
 }
 
-/* Modal box */
+
 .modal-box {
   background: white;
   width: 600px;            
@@ -281,7 +341,7 @@
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-/* Image */
+
 .modal-box img {
   width: 100%;
   height: 200px;
@@ -290,7 +350,7 @@
   margin-bottom: 10px;
 }
 
-/* Scrollable content */
+
 .modal-content {
   flex: 1;                 
   overflow-y: auto;        
@@ -311,7 +371,7 @@
 }
 
 
-/* Mobile responsive */
+
 @media (max-width: 480px) {
   .modal-box {
     width: 90%;
@@ -324,7 +384,6 @@
 }
 
 
-/* Small phones */
 @media (max-width: 360px) {
   .modal-box {
     width: 95%;
@@ -337,7 +396,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
   .modal-box {
     width: 90%;
@@ -349,7 +408,7 @@
   }
 }
 
-/* Tablet */
+
 @media (min-width: 481px) and (max-width: 768px) {
   .modal-box {
     width: 80%;
@@ -361,7 +420,7 @@
   }
 }
 
-/* Small laptop */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .modal-box {
     width: 650px;
@@ -372,7 +431,7 @@
   }
 }
 
-/* Desktop & large screens */
+
 @media (min-width: 1025px) {
   .modal-box {
     width: 600px;
@@ -380,8 +439,9 @@
 }
 
 
+/* Modal css end  */
 
-
+/* footer css start  */
 
 
 .footer {
@@ -395,7 +455,7 @@
   margin-top: 40px;
 }
 
-/* Social Icons */
+
 .social-icons a {
   color: #fff;
   margin-left: 15px;
@@ -416,7 +476,10 @@
   }
 }
 
-/* scroll to top btn  */
+/* footer css end  */
+
+/* scroll to top btn  css start  */
+
 #scrollTopBtn {
   position: fixed;
   bottom: 25px;
@@ -436,3 +499,4 @@
   z-index: 1000;
 }
 
+/* scroll to top btn  css end  */
